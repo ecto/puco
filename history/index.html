@@ -35,6 +35,22 @@ blockquote{margin:14px 0;padding:0 0 0 18px;border-left:3px solid #ccc}
 .note{font-size:.9rem;color:#444}
 ol.src{font-size:.9rem;padding-left:1.4em}
 ol.src li{margin:0 0 6px}
+figure{margin:22px 0}
+figure img{display:block;width:100%;height:auto;background:#eee}
+figcaption{font-size:.88rem;color:#444;margin-top:6px;line-height:1.4}
+.cred{color:#777}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pair figure{margin:22px 0 0}
+.pair img{aspect-ratio:4/5;object-fit:cover;object-position:top;filter:grayscale(1)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 8px}
+.stats b{display:block;font-size:2rem;line-height:1}
+.stats span{font-size:.88rem;color:#444}
+table.score{width:100%;border-collapse:collapse;font-size:.95rem;margin:14px 0}
+table.score th,table.score td{text-align:left;padding:8px 6px;border-bottom:1px solid #ddd;vertical-align:top}
+table.score th{font-size:.85rem;color:#555;font-weight:normal}
+.rule{display:flex;align-items:center;gap:14px;margin:18px 0;font-size:.95rem}
+.rule svg{flex:none}
+@media (max-width:560px){.stats{grid-template-columns:1fr 1fr}.pair{gap:10px}}
 footer{margin-top:48px;font-size:.85rem;color:#555}
 </style>
 <div class="wrap">
@@ -43,14 +59,60 @@ footer{margin-top:48px;font-size:.85rem;color:#555}
 <h1>Who powers Lakewood</h1>
 <p class="dek">Lakewood once made its own electricity. It sold its plant to the Cleveland Electric Illuminating Company in 1907, and that company, now part of FirstEnergy, has owned the city's wires ever since. This is that history, from the court records.</p>
 
+<div class="stats">
+<div><b>1896</b><span>Lakewood proposes its own light plant</span></div>
+<div><b>$76,600</b><span>price CEI paid for it in 1907</span></div>
+<div><b>119 years</b><span>CEI has owned Lakewood's wires</span></div>
+</div>
+
+<figure><svg viewBox="0 0 700 250" role="img" aria-labelledby="tlt" font-family="Times New Roman, Times, serif" style="width:100%;height:auto">
+<title id="tlt">Who owned the electric system: Lakewood and Cleveland, 1890 to today</title>
+<text x="40" y="56" font-size="15" font-weight="bold">Lakewood</text>
+<rect x="67.4" y="70" width="50.3" height="22" fill="#000"/>
+<text x="72.4" y="86" font-size="12.5" fill="#fff">City</text>
+<rect x="117.7" y="70" width="361.1" height="22" fill="#9b9b9b"/>
+<text x="122.7" y="86" font-size="12.5" fill="#fff">CEI</text>
+<rect x="478.9" y="70" width="50.3" height="22" fill="#7a7a7a"/>
+<rect x="529.1" y="70" width="150.9" height="22" fill="#5c5c5c"/>
+<text x="534.1" y="86" font-size="12.5" fill="#fff">FirstEnergy (CEI)</text>
+<text x="40" y="136" font-size="15" font-weight="bold">Cleveland</text>
+<rect x="113.1" y="150" width="566.9" height="22" fill="#000"/>
+<text x="118.1" y="166" font-size="12.5" fill="#fff">Muny Light, now Cleveland Public Power</text>
+<text x="480.9" y="108" font-size="10.5" fill="#555">Centerior 1986</text>
+<line x1="117.7" x2="117.7" y1="66" y2="46" stroke="#000" stroke-width="1"/>
+<text x="117.7" y="40" font-size="12" text-anchor="start">1907 sold to CEI</text>
+<line x1="168.0" x2="168.0" y1="96" y2="98" stroke="#000" stroke-width="1"/>
+<text x="168.0" y="110" font-size="12" text-anchor="start">1918 Lakewood loses suit</text>
+<line x1="451.4" x2="451.4" y1="66" y2="46" stroke="#000" stroke-width="1"/>
+<text x="451.4" y="40" font-size="12" text-anchor="end">1980 Freedom ruling</text>
+<line x1="442.3" x2="442.3" y1="176" y2="178" stroke="#000" stroke-width="1"/>
+<text x="442.3" y="190" font-size="12" text-anchor="end">1978 default; voters keep Muny</text>
+<line x1="85.7" x2="85.7" y1="205" y2="211" stroke="#000"/><text x="85.7" y="226" font-size="12" text-anchor="middle">1900</text>
+<line x1="177.1" x2="177.1" y1="205" y2="211" stroke="#000"/><text x="177.1" y="226" font-size="12" text-anchor="middle">1920</text>
+<line x1="268.6" x2="268.6" y1="205" y2="211" stroke="#000"/><text x="268.6" y="226" font-size="12" text-anchor="middle">1940</text>
+<line x1="360.0" x2="360.0" y1="205" y2="211" stroke="#000"/><text x="360.0" y="226" font-size="12" text-anchor="middle">1960</text>
+<line x1="451.4" x2="451.4" y1="205" y2="211" stroke="#000"/><text x="451.4" y="226" font-size="12" text-anchor="middle">1980</text>
+<line x1="542.9" x2="542.9" y1="205" y2="211" stroke="#000"/><text x="542.9" y="226" font-size="12" text-anchor="middle">2000</text>
+<line x1="634.3" x2="634.3" y1="205" y2="211" stroke="#000"/><text x="634.3" y="226" font-size="12" text-anchor="middle">2020</text>
+<line x1="40" x2="680" y1="205" y2="205" stroke="#000"/>
+</svg><figcaption>Who has owned the electric system in Lakewood and in Cleveland. Lakewood sold its plant in 1907; Cleveland kept its own.</figcaption></figure>
+
 <h2>The city's own plant</h2>
 <p class="era">1890s to 1907</p>
+<figure class="photo"><img src="img/lakewood-rocky-river-bridge-postcard.jpg" alt="Lakewood, Ohio (Rocky River bridge)" loading="lazy"><figcaption>Lakewood's western edge on a postcard from the 1930s or 1940s: the Rocky River bridge and valley. <span class="cred">Photo: Braun Art Publishing Co. / Tichnor Bros., Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Rocky_River_Bridge_and_valley,_showing_Westlake_Hotel,_Lakewood,_Ohio_(64406).jpg">Wikimedia Commons</a>.</span></figcaption></figure>
 <p>In the 1890s Lakewood was a hamlet run by a three-member board. Under board president Clayton L. Tyler (1892 to 1897), it built a water system, sewers and electric lights. In 1896 a municipal light plant was proposed, and resident John French led the effort to see it through. According to the Lakewood Historical Society, the plant "did good service for several years" before the Illuminating Company bought it.<sup><a href="#s1">1</a></sup> A 1918 court opinion describes it as built "at public expense" for public and private lighting.<sup><a href="#s2">2</a></sup></p>
 <p>Lakewood became a village in May 1903.<sup><a href="#s3">3</a></sup></p>
 
 <h2>The sale</h2>
 <p class="era">March 18, 1907</p>
 <p>On or about March 18, 1907, the village sold its plant to the Cleveland Electric Illuminating Company (CEI) for $76,600. The same ordinance gave CEI a franchise to use the streets. It also required CEI to extend lines "without cost or expense" to customers wherever it could sign one customer for each 300 feet of new line.<sup><a href="#s2">2</a></sup></p>
+<div class="rule"><svg width="230" height="54" viewBox="0 0 230 54" role="img" aria-label="One customer per 300 feet of new line">
+<line x1="10" y1="30" x2="220" y2="30" stroke="#000" stroke-width="2"/>
+<rect x="5" y="14" width="8" height="32" fill="#000"/><rect x="217" y="14" width="8" height="32" fill="#000"/>
+<text x="115" y="22" text-anchor="middle" font-size="13" font-family="Times New Roman, Times, serif">300 feet of new line</text>
+<circle cx="200" cy="44" r="6" fill="#9b1c1c"/></svg>
+<span>The 1907 rule: for every customer signed per 300 feet of new line, CEI was to build the extension free.</span></div>
+<figure class="photo"><img src="img/cei-illuminating-building.jpg" alt="CEI headquarters (Illuminating Building)" loading="lazy"><figcaption>The Illuminating Building on Cleveland's Public Square, on a postcard. <span class="cred">Photo: Unknown, No known restrictions (per Commons/DPLA), via <a href="https://commons.wikimedia.org/wiki/File:Illuminating_Building,_Cleveland,_Ohio_-_DPLA_-_cbb4b171f4e231777e2c2a3c32bab65e_(page_1).jpg">Wikimedia Commons</a>.</span></figcaption></figure>
 <p class="note">Why the village sold is not documented in the sources reviewed for this page.</p>
 
 <h2>The promise, in court</h2>
@@ -63,12 +125,207 @@ footer{margin-top:48px;font-size:.85rem;color:#555}
 
 <h2>Next door: Cleveland's Muny Light</h2>
 <p class="era">1906 to 1984</p>
+<div class="pair"><figure class="photo"><img src="img/tom-l-johnson.jpg" alt="Tom L. Johnson (portrait)" loading="lazy"><figcaption>Tom L. Johnson, Cleveland mayor 1901 to 1909, photographed in the early 1890s. <span class="cred">Photo: C. M. Bell Studio, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Johnson,_Hon._Tom._L_Crop.jpg">Wikimedia Commons</a>.</span></figcaption></figure><figure class="photo"><img src="img/newton-d-baker.jpg" alt="Newton D. Baker (portrait)" loading="lazy"><figcaption>Newton D. Baker, Cleveland mayor 1912 to 1915, who opened the municipal plant. <span class="cred">Photo: George Grantham Bain, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Newton_Baker,_Bain_bw_photo_portrait.jpg">Wikimedia Commons</a>.</span></figcaption></figure></div>
 <p>Cleveland took a different path. Out of Mayor Tom L. Johnson's push for public ownership, the city entered the electric business in 1906. Under Mayor Newton D. Baker, its East 53rd Street plant began operating in 1914 as the largest municipal plant in the country.<sup><a href="#s4">4</a></sup></p>
 <p>The rivalry with CEI lasted decades. In 1977 a licensing board of the Nuclear Regulatory Commission found that CEI and its partners had engaged in anticompetitive conduct, and an appeal board affirmed in 1979. Conditions were attached to the licenses for the Davis-Besse and Perry nuclear plants.<sup><a href="#s5">5</a></sup> Cleveland also sued CEI under federal antitrust law, but a federal jury found for CEI in 1981, and the Sixth Circuit affirmed in 1984.<sup><a href="#s6">6</a></sup></p>
 <p>In December 1978 Cleveland defaulted on $14 million in notes held by six banks, after Mayor Dennis Kucinich refused to sell Muny Light to CEI. In February 1979 voters rejected the sale.<sup><a href="#s7">7</a></sup> Kucinich later told a congressional subcommittee that a bank had deliberately forced the default; that is his account.<sup><a href="#s8">8</a></sup> The utility survives today as Cleveland Public Power.<sup><a href="#s4">4</a></sup></p>
+<figure class="photo"><img src="img/muny-light-plant-1973.jpg" alt="Cleveland municipal light plant" loading="lazy"><figcaption>Cleveland's municipal light plant, seen from the East 72nd Street pier in July 1973, five years before the city's default. <span class="cred">Photo: Frank John Aleksandrowicz (EPA DOCUMERICA), Public domain (US federal work, NARA 550174), via <a href="https://commons.wikimedia.org/wiki/File:EAST_72ND_STREET_PIER_ON_LAKE_ERIE._MUNICIPAL_LIGHT_PLANT_IN_A_HAZE_OF_SMOKE_-_NARA_-_550174.jpg">Wikimedia Commons</a>.</span></figcaption></figure>
 
 <h2>The Freedom substation</h2>
 <p class="era">December 30, 1980</p>
+<figure><svg viewBox="0 0 700 530" role="img" aria-labelledby="lmt" font-family="Times New Roman, Times, serif" style="width:100%;height:auto;background:#fff">
+<title id="lmt">Location of the Freedom substation and other substations in Lakewood</title>
+<defs><clipPath id="lmc"><rect width="700" height="530"/></clipPath></defs><g clip-path="url(#lmc)">
+<path d="M-135.1,228.8 L-135.1,-73.3 L893.4,-73.3 L893.4,169.7 L886.9,173.3 L878.9,174.7 L878.3,170.2 L877.8,170.2 L878.4,175.0 L875.4,177.2 L871.6,178.5 L854.9,182.0 L846.2,182.6 L838.2,182.1 L816.7,178.2 L801.1,169.1 L798.8,169.0 L795.2,170.2 L775.5,164.6 L770.5,164.5 L759.7,162.6 L756.8,160.3 L749.8,162.0 L743.8,159.5 L739.9,158.7 L728.9,157.7 L725.7,156.0 L722.6,155.9 L721.2,154.8 L719.3,152.7 L720.4,151.1 L721.7,151.5 L720.4,150.6 L718.1,153.9 L717.3,152.8 L715.1,152.5 L714.7,150.9 L710.4,152.8 L706.2,152.5 L700.9,150.3 L698.8,148.0 L698.7,145.5 L695.9,145.0 L695.1,139.9 L695.8,139.9 L695.9,139.2 L683.9,135.3 L681.8,135.0 L681.7,135.7 L679.1,135.1 L678.2,133.9 L670.3,131.7 L662.8,133.1 L660.6,136.7 L656.3,138.7 L643.6,137.7 L626.4,132.8 L604.4,124.8 L599.2,121.0 L598.5,116.9 L598.1,116.9 L598.2,118.8 L596.9,118.9 L593.1,118.1 L589.9,116.2 L585.4,117.2 L582.7,115.8 L578.2,115.7 L574.9,116.6 L573.1,116.1 L570.9,114.1 L569.2,113.8 L568.3,111.2 L568.5,110.6 L566.1,108.3 L563.4,107.1 L559.9,107.4 L558.2,106.2 L556.9,104.0 L553.5,101.7 L553.8,99.5 L552.9,97.7 L549.7,96.3 L544.8,95.6 L544.6,94.8 L543.6,95.9 L540.1,95.5 L537.2,93.5 L535.9,90.0 L533.0,88.9 L529.0,89.2 L522.6,88.4 L510.0,89.2 L503.8,88.4 L498.0,89.9 L493.1,88.2 L487.8,89.9 L481.9,90.3 L479.5,91.1 L474.1,89.1 L471.9,89.1 L469.6,89.6 L468.6,91.5 L467.0,92.3 L462.6,93.2 L458.8,93.5 L455.4,92.8 L452.7,93.5 L450.0,91.2 L445.4,93.1 L435.2,89.9 L431.6,86.9 L428.8,86.3 L427.4,82.7 L423.9,81.2 L423.1,79.4 L423.5,70.2 L422.7,69.2 L396.8,68.8 L394.9,69.1 L385.9,79.9 L382.9,82.1 L367.0,87.3 L362.5,90.5 L351.5,90.8 L341.0,89.5 L331.7,92.1 L319.3,90.8 L308.5,91.9 L290.2,95.8 L273.8,94.7 L262.7,95.3 L247.2,99.1 L240.3,99.4 L236.7,100.4 L232.5,103.1 L225.3,105.3 L221.2,105.4 L218.6,106.3 L218.3,108.1 L207.7,112.5 L199.6,114.3 L181.4,120.6 L176.9,121.3 L166.5,126.0 L155.1,128.6 L143.0,132.6 L138.3,135.7 L138.1,135.1 L136.3,135.1 L130.1,136.1 L129.3,137.6 L115.5,138.2 L109.7,142.1 L103.9,141.9 L83.2,149.2 L68.3,153.4 L60.3,147.0 L56.1,142.7 L48.6,149.1 L48.1,150.9 L46.0,152.7 L40.9,154.3 L37.8,153.5 L36.6,152.4 L34.5,152.6 L33.4,154.4 L28.6,156.7 L26.6,158.8 L25.2,161.5 L22.4,162.3 L8.2,171.3 L4.3,171.3 L1.2,172.1 L-16.5,179.2 L-20.2,173.9 L-16.9,179.0 L-19.5,182.4 L-24.5,184.8 L-27.9,185.7 L-30.5,185.5 L-31.0,186.4 L-33.5,187.5 L-39.8,193.5 L-52.3,201.1 L-64.5,205.1 L-66.9,204.3 L-68.1,206.2 L-71.3,206.7 L-106.9,220.7 L-110.7,223.1 L-113.8,223.1 L-120.9,224.7 L-135.1,228.8 Z" fill="#dfe8ee"/>
+<path d="M116.1,613.1 L119.6,610.2 L123.1,608.6 L126.7,607.7 L141.6,606.6 L150.8,605.0 L156.9,602.8 L161.3,600.2 L164.5,596.3 L170.3,584.8 L174.3,574.9 L179.0,565.7 L183.2,559.8 L201.3,541.9 L213.9,535.8 L215.7,532.1 L215.6,530.2 L212.2,525.0 L206.4,519.2 L198.4,513.6 L190.4,501.9 L176.6,476.7 L173.7,470.8 L172.8,465.3 L173.1,461.1 L174.8,457.1 L177.2,453.5 L181.5,450.3 L187.4,447.6 L196.6,446.0 L209.9,446.6 L221.5,445.3 L232.4,441.6 L236.7,438.7 L240.3,435.2 L242.7,431.3 L243.2,428.8 L242.5,426.5 L241.4,425.0 L238.4,421.9 L236.5,420.7 L225.0,416.9 L219.0,416.7 L210.2,419.4 L198.8,425.7 L192.9,430.1 L184.8,437.1 L182.6,438.4 L177.2,439.5 L162.1,440.8 L137.7,444.4 L114.7,444.0 L101.0,445.6 L96.6,444.6 L86.2,440.1 L81.0,436.5 L77.8,433.1 L74.7,428.6 L73.2,424.3 L71.9,418.8 L69.6,401.6 L69.6,396.0 L70.7,391.3 L73.0,387.1 L75.4,385.0 L78.4,383.4 L83.0,382.2 L92.6,382.2 L111.4,387.3 L115.8,393.0 L117.3,395.7 L119.4,397.9 L124.2,400.0 L132.9,401.6 L143.1,405.3 L149.2,406.1 L153.0,406.1 L157.1,405.2 L159.0,404.0 L164.8,397.7 L167.1,395.7 L177.3,389.3 L178.1,388.0 L178.1,385.3 L175.6,378.6 L171.3,369.6 L169.8,364.7 L169.1,358.8 L170.2,346.5 L171.6,338.4 L176.2,320.0 L178.5,307.8 L181.4,298.4 L189.0,289.4 L192.1,284.0 L191.6,280.9 L189.6,277.5 L185.4,274.8 L171.3,269.9 L166.5,269.8 L156.3,272.5 L151.6,274.9 L147.4,278.3 L131.1,296.5 L129.0,302.0 L126.4,304.3 L121.7,305.9 L110.6,306.8 L102.2,305.3 L97.7,302.8 L93.9,299.1 L91.1,294.6 L89.9,289.7 L89.1,283.0 L90.3,272.9 L95.1,262.1 L98.7,255.6 L102.7,252.6 L104.0,251.1 L103.8,250.1 L105.7,246.5 L108.4,237.2 L109.3,231.6 L109.4,228.8 L108.8,228.7 L109.5,221.7 L109.2,220.9 L101.4,215.9 L97.0,210.7 L95.1,206.6 L91.1,201.5 L86.4,198.3 L79.8,195.7 L70.5,186.8 L67.5,183.2 L66.9,182.1 L68.1,181.4 L67.5,180.4 L67.4,178.0 L65.7,172.1 L58.4,161.3 L57.7,161.0 L52.5,151.4 L50.7,149.6 L49.0,148.7 L55.5,143.2 L66.4,153.9 L68.3,156.9 L71.4,159.5 L73.5,159.9 L74.7,159.5 L81.4,154.2 L82.1,155.5 L86.0,153.6 L86.6,155.0 L88.0,154.4 L88.9,156.0 L93.1,155.1 L94.0,159.9 L95.5,159.6 L95.7,160.3 L93.5,160.7 L94.3,164.6 L93.2,164.9 L93.9,167.9 L91.8,168.4 L92.2,170.5 L91.1,170.7 L89.6,169.2 L90.2,168.5 L89.0,167.3 L89.1,166.1 L88.4,165.3 L88.7,165.1 L88.1,164.4 L87.0,165.3 L86.6,164.9 L87.9,163.7 L85.3,161.1 L84.6,161.7 L83.7,160.6 L82.3,161.9 L81.6,161.3 L82.8,160.3 L81.1,158.6 L80.1,159.5 L79.4,158.8 L77.2,160.4 L77.2,161.5 L77.4,162.3 L87.2,171.0 L90.6,175.2 L91.0,176.9 L92.8,179.6 L100.4,189.6 L103.4,192.4 L110.7,204.1 L111.8,207.6 L113.1,209.9 L114.6,219.8 L115.5,223.1 L115.8,229.8 L115.5,233.0 L113.1,241.7 L112.2,250.2 L107.0,254.0 L103.9,261.6 L102.1,264.3 L99.9,266.6 L95.0,280.5 L94.5,285.6 L95.7,292.0 L97.3,295.6 L102.2,299.6 L105.2,301.2 L115.5,300.9 L119.7,298.6 L129.4,291.0 L144.9,275.4 L149.5,271.7 L159.6,266.6 L166.7,265.5 L171.4,265.9 L179.0,267.6 L183.5,269.9 L187.0,270.8 L191.6,274.0 L195.1,278.5 L197.0,283.6 L195.4,289.0 L188.3,296.2 L184.4,302.7 L183.8,307.5 L180.0,320.3 L181.1,324.2 L180.1,328.2 L177.4,332.8 L173.1,349.7 L173.8,358.0 L175.7,365.4 L175.9,369.3 L177.3,375.0 L179.2,378.8 L181.3,385.8 L181.3,390.8 L180.3,392.9 L177.0,396.4 L168.0,400.6 L166.3,402.1 L163.9,406.4 L161.8,408.2 L157.5,409.2 L146.8,409.6 L141.7,408.8 L132.8,405.3 L120.1,402.4 L115.9,399.5 L112.5,395.2 L105.3,392.9 L104.8,392.0 L101.6,389.4 L94.4,386.5 L85.1,385.7 L78.5,387.3 L76.0,390.4 L74.3,394.5 L73.6,400.8 L73.8,407.4 L75.9,416.3 L76.6,422.6 L79.1,427.8 L83.0,432.7 L87.1,436.1 L94.7,439.9 L100.5,441.6 L103.6,441.5 L106.9,440.2 L110.7,439.7 L136.0,439.2 L158.5,436.9 L177.7,436.5 L181.0,435.8 L182.6,434.9 L186.5,429.3 L194.8,423.1 L208.9,415.9 L215.9,414.1 L222.2,413.8 L227.7,414.5 L232.4,415.8 L237.2,418.4 L241.0,420.9 L243.8,423.6 L245.2,426.0 L246.2,428.9 L246.1,431.4 L244.9,434.9 L242.2,438.5 L234.2,444.5 L228.2,447.0 L222.4,448.7 L214.9,449.6 L197.3,449.4 L190.4,450.5 L184.8,452.4 L178.7,457.2 L177.2,461.3 L176.6,464.5 L177.4,469.1 L182.4,480.0 L194.5,501.0 L201.4,508.3 L211.7,516.0 L215.3,520.7 L218.3,525.9 L219.8,530.3 L220.1,533.7 L219.1,537.0 L216.5,539.4 L204.1,545.0 L196.3,551.4 L189.1,558.8 L184.7,565.4 L170.3,593.3 L165.3,600.2 L160.3,604.5 L154.8,607.0 L148.5,609.1 L142.3,610.0 L127.3,610.8 L120.8,613.1 L116.1,613.1 Z" fill="#dfe8ee"/>
+<path d="M117.9,613.1 L120.9,610.8 L124.5,609.4 L149.1,607.3 L153.2,606.1 L160.8,602.5 L163.8,599.7 L169.5,591.4 L183.4,562.2 L186.9,558.4 L195.1,551.6 L200.6,544.7 L216.7,536.6 L217.6,534.0 L217.9,530.6 L216.0,525.6 L213.2,521.0 L199.1,509.4 L188.0,493.8 L180.1,478.3 L176.0,467.1 L175.5,463.0 L176.0,458.9 L178.2,455.2 L181.2,452.7 L190.1,448.6 L215.1,448.2 L230.6,444.7 L236.7,441.6 L239.0,439.4 L244.1,433.9 L244.9,431.3 L244.8,428.0 L244.0,425.5 L240.1,421.0 L237.2,419.2 L228.3,416.2 L219.8,415.4 L210.8,417.0 L207.3,418.5 L194.5,426.7 L183.3,436.0 L177.4,438.4 L161.0,439.2 L141.5,441.0 L113.7,441.1 L99.2,443.7 L92.5,441.4 L85.1,436.7 L80.2,433.0 L75.7,426.7 L74.7,422.6 L71.0,397.3 L71.9,392.4 L73.9,388.3 L77.7,385.4 L86.6,383.3 L97.2,384.7 L104.2,387.6 L113.3,393.8 L118.5,400.3 L132.4,403.3 L140.1,406.4 L148.0,407.6 L160.0,406.3 L162.5,404.5 L164.1,401.7 L166.8,398.5 L173.1,396.0 L177.8,393.1 L179.4,391.6 L180.3,388.9 L179.0,382.0 L175.1,371.9 L172.0,353.1 L172.5,347.8 L174.5,337.7 L178.4,325.5 L178.8,316.0 L180.2,307.5 L182.1,301.9 L185.6,296.8 L191.9,289.4 L193.7,286.0 L194.2,282.6 L191.3,277.3 L185.7,272.3 L175.4,268.7 L168.6,267.7 L161.2,268.4 L153.9,270.9 L147.2,275.5 L141.3,282.0 L137.8,285.0 L131.5,293.1 L124.8,297.0 L119.5,301.8 L116.8,303.3 L112.7,304.3 L105.3,304.1 L100.8,302.3 L97.7,300.0 L95.4,297.7 L93.3,292.5 L91.9,288.1 L91.0,281.2 L92.0,277.1 L99.8,259.8 L104.7,253.5 L107.0,248.1 L109.4,245.2 L111.4,241.1 L113.2,233.3 L113.5,227.6 L113.0,221.1 L111.8,217.1 Z" fill="#dfe8ee"/>
+<path d="M-135.1,349.9 L-126.9,355.1 L-124.0,360.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-103.8,351.3 L-107.6,349.2 L-124.9,347.7 L-134.7,344.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M32.1,372.7 L31.6,369.6 L32.8,367.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M32.8,367.7 L39.4,365.0 L78.3,362.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M74.0,359.9 L40.7,358.0 L33.4,361.5 L25.5,373.3 L32.8,367.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M239.9,369.9 L200.7,362.0 L183.1,361.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M198.0,365.0 L236.0,379.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M239.9,380.7 L266.1,386.8 L283.6,389.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M290.7,386.5 L274.1,383.1 L249.8,373.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M374.6,385.4 L352.6,387.0 L313.6,387.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M319.4,390.8 L337.1,393.3 L363.2,395.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M363.2,389.3 L372.7,392.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M379.4,393.2 L396.5,389.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M463.9,392.1 L438.6,386.8 L409.1,384.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M411.9,397.7 L451.0,395.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M519.1,416.1 L484.7,394.4 L475.5,390.2 L466.3,388.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M610.2,429.0 L624.7,431.1 L630.1,433.7 L636.9,439.2 L645.9,439.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M645.5,409.0 L643.3,413.1 L635.2,418.6 L610.7,425.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M646.9,413.0 L649.1,409.2 L652.4,408.0 L656.6,410.4 L657.3,413.8 L656.4,416.2 L654.0,417.9 L639.6,421.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M645.4,432.7 L642.7,437.8 L638.4,438.7 L634.9,436.7 L633.6,432.3 L634.3,429.6 L637.2,427.4 L647.4,424.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M695.6,414.3 L670.0,414.3 L662.1,412.1 L654.1,407.4 L645.5,407.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M646.0,443.4 L654.5,431.0 L661.3,425.8 L667.2,423.6 L687.6,419.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M725.4,414.3 L736.5,413.2 L760.4,408.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M760.6,393.8 L740.4,405.3 L726.2,409.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M801.1,390.6 L836.6,386.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M855.1,382.8 L807.1,379.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M843.9,216.0 L842.9,214.2 L843.4,212.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M855.9,203.3 L842.1,207.3 L833.5,207.4 L825.7,205.2 L811.5,198.5 L805.0,197.4 L798.8,198.6 L790.4,203.1 L798.6,199.8 L805.7,199.2 L810.6,200.4 L821.9,206.3 L829.1,208.8 L837.0,210.2 L849.7,210.4 L857.5,208.2 L867.3,202.5 L881.6,196.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M873.8,389.6 L884.8,392.9 L889.7,392.1 L893.4,390.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,375.6 L889.8,374.5 L887.4,371.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-12.7,229.2 L-12.9,227.0 L-13.8,226.5 L-84.0,223.4 L-89.8,225.4 L-94.3,228.6 L-135.1,239.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M816.3,224.9 L814.6,227.7 L790.6,239.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M76.9,212.0 L65.0,206.4 L58.1,205.0 L45.3,205.6 L27.9,208.6 L22.5,208.6 L13.5,206.6 L-3.8,196.4 L-9.1,195.9 L-27.9,201.5 L-32.4,203.5 L-39.9,209.1 L-42.1,212.0 L-42.4,225.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M726.7,592.6 L705.0,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M406.1,120.1 L405.6,135.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M764.7,268.4 L764.1,269.8 L744.7,281.3 L647.9,337.7 L545.2,393.3 L541.8,396.5 L539.8,400.1 L529.5,428.0 L527.3,437.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M467.1,369.9 L466.5,380.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M467.6,140.8 L466.2,183.0 L469.8,196.8 L467.1,369.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M467.7,380.5 L467.1,369.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M50.0,433.9 L9.2,445.8 L-13.5,453.6 L-94.3,487.8 L-135.1,502.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M839.0,390.5 L873.8,389.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,388.8 L873.8,389.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,190.5 L852.5,204.6 L838.8,213.4 L838.3,214.7 L854.5,205.5 L893.4,192.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M181.5,143.4 L175.4,143.9 L165.4,147.2 L154.2,153.2 L91.4,205.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M92.0,206.2 L155.1,153.8 L166.2,147.8 L181.5,143.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M669.2,189.6 L629.4,178.5 L526.8,145.8 L405.6,135.1 L318.8,134.0 L181.5,143.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M669.2,189.6 L703.3,197.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M703.3,197.9 L674.8,190.3 L669.2,189.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M718.3,201.2 L703.3,197.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M743.5,207.6 L742.2,206.6 L719.8,201.2 L718.3,201.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M718.3,201.2 L719.3,202.3 L743.5,207.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M758.7,211.2 L743.5,207.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M781.3,216.7 L780.4,215.9 L759.7,210.8 L758.7,211.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M758.7,211.2 L780.0,217.0 L781.3,216.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M838.3,214.7 L816.7,224.9 L781.3,216.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M766.0,574.7 L770.0,579.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M770.0,579.0 L766.0,572.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,539.4 L832.4,585.2 L821.5,590.8 L793.2,595.5 L787.3,595.3 L783.6,593.9 L779.1,590.6 L770.0,579.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,464.7 L817.5,437.4 L771.7,422.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,252.6 L860.7,263.8 L778.9,272.6 L647.1,228.6 L461.7,206.0 L365.7,212.3 L236.6,208.0 L171.6,225.4 L150.3,243.5 L142.4,253.4 L122.8,245.7 L97.3,241.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-135.1,362.3 L-120.3,359.6 L-115.3,357.5 L-69.3,332.7 L-32.7,312.2 L-25.5,307.0 L-7.3,290.6 L11.2,281.0 L35.5,271.1 L50.8,263.5 L77.0,244.6 L86.6,241.2 L97.3,241.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M277.7,108.9 L263.2,110.6 L229.5,112.3 L206.0,121.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M371.2,97.7 L334.2,98.0 L328.1,99.3 L319.7,99.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M527.3,116.2 L520.0,116.4 L503.6,113.4 L487.3,112.0 L464.1,113.6 L450.3,110.4 L422.2,108.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M793.5,191.2 L781.8,186.4 L754.4,180.3 L738.0,174.7 L711.5,168.4 L698.7,167.8 L647.7,155.8 L618.5,146.0 L601.4,136.6 L589.3,133.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M380.5,247.9 L375.6,247.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M646.9,274.9 L547.3,262.4 L479.0,256.5 L454.7,250.9 L430.0,248.9 L380.5,247.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,277.2 L864.3,284.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M235.8,139.6 L234.3,208.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-135.1,448.5 L-94.7,427.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-94.7,427.9 L-102.3,430.5 L-135.1,447.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-56.1,412.7 L-94.7,427.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-49.5,410.4 L-56.1,412.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-56.1,412.7 L-54.8,412.9 L-49.5,410.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-37.5,405.9 L-49.5,410.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-31.1,403.2 L-37.0,405.0 L-37.5,405.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-37.5,405.9 L-36.5,406.0 L-32.0,404.3 L-31.1,403.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M83.1,366.1 L72.0,366.2 L60.9,371.7 L55.0,372.8 L25.5,373.3 L18.9,381.8 L12.9,386.1 L6.7,389.4 L-31.1,403.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M143.3,367.4 L132.8,366.6 L86.7,365.8 L83.1,366.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M83.1,366.1 L143.3,367.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M182.6,368.3 L143.3,367.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M380.9,243.3 L313.4,297.7 L239.6,334.3 L219.1,345.6 L197.5,367.7 L194.7,368.6 L182.6,368.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M192.2,404.3 L186.3,413.5 L176.5,420.4 L150.9,426.3 L139.7,430.5 L138.3,433.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M765.2,586.9 L762.4,590.9 L758.7,592.7 L726.7,592.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M784.8,201.7 L647.5,168.6 L527.2,130.8 L406.1,120.1 L337.7,118.6 L319.3,118.8 L205.8,126.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M789.1,202.7 L785.3,201.6 L784.8,201.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M784.8,201.7 L789.1,202.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,232.9 L854.5,218.7 L789.1,202.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M44.9,227.8 L-5.3,227.0 L-120.9,258.7 L-126.6,259.8 L-135.1,259.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M81.2,213.9 L73.6,220.2 L66.6,224.0 L60.4,225.8 L44.9,227.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M44.9,227.8 L52.7,227.9 L65.3,225.4 L73.5,221.4 L82.0,214.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M81.2,213.9 L76.9,212.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M91.4,205.5 L81.2,213.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M82.0,214.4 L81.2,213.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M82.0,214.4 L92.0,206.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M97.3,241.2 L98.1,237.3 L97.5,235.1 L89.1,221.6 L85.6,217.1 L82.0,214.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M543.0,395.3 L546.3,397.7 L552.3,397.2 L555.4,393.8 L555.7,389.2 L553.1,385.1 L546.2,381.7 L531.0,378.7 L473.2,379.1 L456.8,382.9 L402.1,385.1 L378.2,384.5 L363.0,380.6 L308.7,379.9 L300.5,381.4 L291.9,381.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M236.6,208.0 L234.8,297.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M220.8,612.6 L215.7,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M201.9,613.1 L172.2,598.6 L139.1,580.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M224.4,612.4 L220.8,612.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M220.8,612.6 L221.7,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M221.7,613.1 L224.4,612.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M516.7,532.4 L460.5,556.0 L237.2,610.9 L224.4,612.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M516.7,532.4 L522.0,530.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M522.0,530.3 L519.5,531.1 L516.7,532.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M532.9,525.6 L522.0,530.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M532.9,525.6 L538.0,523.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M538.0,523.4 L535.3,524.2 L532.9,525.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M631.0,483.5 L538.0,523.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M631.0,483.5 L633.0,482.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M633.0,482.7 L631.9,482.8 L631.0,483.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,368.5 L872.0,377.3 L857.7,377.7 L851.6,379.0 L846.1,382.7 L834.9,393.9 L829.8,396.5 L633.0,482.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M139.1,580.2 L128.3,576.3 L110.1,577.5 L105.4,578.8 L80.6,592.9 L48.9,597.5 L45.8,599.0 L31.3,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M705.5,303.9 L685.3,303.7 L678.7,302.0 L669.1,303.7 L637.9,305.6 L340.0,300.3 L317.3,303.5 L274.4,298.9 L205.5,297.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,302.3 L705.5,303.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M234.8,297.9 L234.7,321.1 L240.5,333.8 L239.5,410.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M334.2,512.7 L318.2,505.8 L261.5,467.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M334.2,512.7 L335.0,513.1 L338.4,512.5 L336.8,512.2 L334.2,512.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M291.9,381.5 L278.4,381.0 L205.6,359.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M857.7,377.7 L849.7,377.1 L832.8,379.0 L778.2,379.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-135.1,346.6 L-125.4,351.6 L-109.7,357.5 L-96.3,360.5 L-61.9,362.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M893.4,379.4 L865.8,382.6 L796.3,384.1 L778.1,389.7 L742.8,405.9 L726.2,409.9 L565.7,431.1 L556.7,431.3 L547.7,429.8 L539.4,426.8 L486.8,399.4 L470.0,393.4 L456.7,390.7 L435.6,389.1 L387.2,388.1 L338.6,388.9 L280.9,385.4 L263.8,381.9 L222.2,368.0 L194.8,362.1 L130.2,360.3 L-7.5,360.5 L-82.6,359.2 L-97.1,358.0 L-106.4,355.9 L-125.0,349.4 L-135.1,344.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-61.9,362.1 L-42.6,361.1 L107.5,361.1 L197.0,363.7 L217.2,367.6 L263.5,382.9 L281.8,386.9 L326.4,389.3 L407.7,389.2 L450.4,390.9 L476.3,396.1 L498.2,405.6 L538.7,427.3 L549.2,430.7 L554.8,431.7 L569.1,431.5 L727.9,411.3 L740.0,408.3 L781.4,389.1 L796.9,384.6 L871.3,383.0 L893.4,380.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-61.9,362.1 L130.1,362.7 L181.3,363.6 L195.8,364.7 L218.2,369.3 L268.1,385.9 L283.6,389.1 L387.6,393.8 L445.3,394.8 L469.9,397.3 L479.3,400.1 L496.7,407.7 L536.2,429.6 L547.1,433.4 L556.5,434.9 L566.4,434.6 L725.4,414.3 L744.0,409.3 L780.4,392.8 L796.2,387.8 L858.1,386.6 L893.4,383.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M146.1,613.1 L144.9,603.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M183.7,265.0 L191.4,268.6 L198.5,275.3 L201.6,280.1 L205.4,291.0 L204.8,305.7 L200.7,316.2 L198.2,328.1 L186.8,354.0 L185.0,362.4 L185.0,368.3 L191.4,387.5 L192.1,393.1 L191.7,403.9 L194.6,405.8 L224.2,405.6 L244.9,412.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M129.4,381.0 L128.4,377.9 L120.5,375.9 L99.9,378.8 L88.6,376.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M244.9,412.5 L255.9,422.4 L261.3,431.8 L262.0,434.3 L262.7,461.4 L234.9,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M184.7,198.2 L164.8,199.8 L128.6,213.9 L126.4,217.3 L126.3,238.3 L122.8,245.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M196.1,368.5 L236.0,379.5 L258.6,387.0 L287.4,394.5 L363.2,395.5 L446.5,398.7 L467.1,400.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M778.2,379.1 L780.7,380.5 L790.3,390.4 L792.7,391.6 L801.1,390.6 L839.0,390.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M128.3,576.3 L129.6,509.4 L129.2,505.8 L127.3,502.7 L121.2,501.1 L29.5,495.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M434.0,476.0 L388.2,514.0 L331.5,584.7 L330.7,587.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M434.0,476.0 L435.8,474.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M435.8,474.6 L434.5,475.1 L434.0,476.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M527.3,437.6 L525.0,437.6 L509.1,445.0 L465.2,456.0 L452.5,461.9 L435.8,474.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M645.8,457.6 L616.5,457.4 L527.3,437.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M122.8,245.7 L122.3,247.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M97.2,613.1 L97.3,606.1 L99.8,596.3 L104.0,589.9 L109.9,585.9 L116.3,585.4 L120.9,587.2 L136.0,601.0 L142.1,603.1 L151.0,602.0 L159.8,596.6 L165.3,588.6 L173.7,568.5 L185.5,555.6 L189.0,547.4 L189.5,538.9 L188.7,535.0 L181.4,520.8 L179.7,515.5 L180.5,510.4 L184.1,503.2 L198.0,487.9 L202.6,475.7 L205.4,471.1 L211.7,467.8 L227.2,465.1 L237.3,460.9 L250.4,448.6 L252.2,445.3 L253.4,440.3 L253.1,437.1 L250.8,431.5 L246.8,424.7 L243.2,420.7 L234.1,414.9 L223.7,412.3 L216.3,412.7 L208.0,414.9 L174.7,429.5 L151.0,431.0 L119.6,436.8 L112.0,436.5 L106.1,434.2 L100.8,430.1 L97.5,426.0 L95.5,421.9 L94.2,416.1 L93.9,409.5 L95.3,403.5 L99.5,396.6 L112.6,382.5 L119.1,380.2 L133.0,381.4 L153.3,388.8 L156.8,388.3 L161.1,385.1 L162.6,382.1 L163.3,378.2 L161.8,357.3 L163.2,343.1 L166.5,331.9 L175.1,316.0 L174.9,310.6 L171.6,305.7 L166.5,303.7 L153.1,301.9 L147.3,300.0 L142.3,296.1 L128.5,281.1 L125.4,276.3 L123.0,269.2 L121.7,251.1 L122.3,247.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-69.3,332.7 L-72.4,478.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-66.5,225.5 L-67.9,309.7 L-69.3,332.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M399.6,406.4 L379.4,451.4 L368.1,464.5 L341.6,487.6 L339.6,491.8 L338.6,514.5 L359.6,549.4 L367.0,568.0 L367.7,579.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M385.6,134.8 L383.6,211.2 L376.4,301.2 L375.6,339.6 L377.1,343.2 L389.8,354.9 L399.8,379.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M399.6,406.4 L402.2,401.1 L402.5,397.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M402.5,397.3 L399.6,406.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M399.8,379.7 L401.2,384.5 L402.1,385.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M402.1,385.1 L399.8,379.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M402.1,385.1 L403.0,393.9 L402.5,397.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M205.8,126.5 L205.4,141.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M733.3,439.0 L731.1,579.7 L726.7,592.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M645.9,439.8 L646.7,432.8 L647.0,398.4 L646.4,397.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M646.4,397.9 L645.6,399.0 L645.5,407.2 L645.9,439.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M645.9,439.8 L644.5,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M647.1,183.7 L646.4,397.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M647.7,155.8 L647.1,183.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M555.0,516.1 L553.7,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M465.4,450.4 L462.8,555.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M465.4,450.4 L465.5,445.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M465.5,445.7 L464.8,449.6 L465.4,450.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M466.5,405.7 L465.5,445.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M466.5,405.7 L467.7,380.5" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M466.5,380.9 L466.0,403.5 L466.5,405.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M462.8,555.4 L461.8,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M367.7,579.0 L366.8,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M-72.4,478.7 L-74.7,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M864.2,262.7 L864.4,298.5 L866.8,307.8 L866.1,373.0 L866.5,377.5 L872.0,389.8" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M798.8,379.0 L798.8,410.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M778.1,272.5 L777.9,289.0 L772.6,297.0 L771.8,305.9 L769.7,307.6 L762.1,308.6 L760.7,309.9 L760.1,312.2 L760.5,414.7 L761.0,419.4 L763.4,425.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M790.4,203.1 L786.2,221.3 L786.5,230.3 L796.4,251.0 L805.3,263.7 L806.2,266.7 L806.0,270.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M759.8,303.4 L760.1,312.2" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M763.4,425.9 L766.1,431.0 L767.0,436.0 L766.9,457.9 L764.4,470.3 L759.2,479.2 L738.9,499.6 L735.9,505.7 L735.5,509.9 L736.3,513.0 L739.7,518.4 L761.2,540.5 L765.5,547.5 L766.4,553.2 L765.2,586.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M185.9,143.1 L183.7,265.0" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M778.2,379.1 L646.4,380.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M6.3,368.7 L-2.7,366.4 L-85.4,363.8 L-89.7,362.3 L-103.8,351.3" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M6.3,368.7 L11.0,371.9 L17.9,372.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M17.9,372.4 L6.3,368.7" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M25.5,373.3 L17.9,372.4" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M97.3,241.2 L87.6,273.1 L61.2,393.8 L52.9,427.1 L51.3,432.6 L50.0,433.9" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M50.0,433.9 L30.3,476.2 L29.1,480.7 L32.4,568.0 L34.5,591.6 L37.7,606.6" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M37.7,606.6 L38.7,613.1" fill="none" stroke="#c8c8c8" stroke-width="1.6"/>
+<path d="M648.6,144.6 L647.6,155.8 L647.1,183.9 L646.6,338.5 L562.2,384.2 L546.7,392.2 L538.5,388.0 L524.4,378.7 L473.2,379.1 L461.2,382.2 L456.8,382.9 L402.1,385.1 L379.2,385.2 L374.6,384.2 L349.8,383.8 L338.6,382.6 L303.9,384.7 L290.4,385.0 L287.2,386.9 L287.0,389.2 L288.2,389.9 L289.6,394.7 L290.0,407.2 L248.5,406.6 L244.9,412.5 L239.5,410.1 L224.4,405.6 L203.7,405.8 L194.1,405.5 L192.2,404.8 L121.3,406.0 L102.3,393.7 L74.7,388.6 L69.6,414.1 L97.5,444.4 L103.7,445.5 L105.3,461.5 L96.7,456.9 L95.0,452.4 L87.3,448.9 L79.5,461.5 L59.8,459.2 L59.0,450.1 L65.7,446.1 L74.0,442.4 L63.8,429.8 L59.7,415.6 L56.7,411.7 L61.3,394.0 L87.0,376.6 L98.9,378.8 L102.9,374.2 L144.6,375.6 L153.6,384.7 L163.3,375.8 L173.0,375.7 L173.2,367.8 L172.1,363.1 L177.2,328.8 L191.5,302.6 L142.3,296.1 L120.2,305.5 L94.4,303.6 L88.2,284.6 L95.8,264.7 L105.9,242.8 L108.0,233.7 L108.6,214.2 L102.3,196.4 L89.0,180.1 L78.7,168.6 L70.1,162.9 L51.4,146.7 L56.1,142.7 L60.3,147.0 L68.3,153.4 L83.2,149.2 L103.9,141.9 L109.7,142.1 L111.0,141.5 L113.4,139.0 L115.5,138.2 L129.3,137.6 L130.1,136.1 L136.3,135.1 L138.1,135.1 L138.3,135.7 L143.0,132.6 L155.1,128.6 L166.5,126.0 L170.8,124.4 L176.9,121.3 L181.4,120.6 L199.6,114.3 L207.7,112.5 L209.6,111.3 L218.3,108.1 L218.6,106.3 L221.2,105.4 L225.3,105.3 L232.5,103.1 L236.7,100.4 L240.3,99.4 L247.2,99.1 L256.3,96.6 L262.7,95.3 L273.8,94.7 L290.2,95.8 L300.0,94.0 L308.5,91.9 L319.3,90.8 L331.7,92.1 L341.0,89.5 L351.5,90.8 L362.5,90.5 L367.0,87.3 L382.9,82.1 L385.9,79.9 L391.4,72.8 L394.9,69.1 L402.2,68.6 L422.7,69.2 L423.5,70.2 L423.1,79.4 L423.9,81.2 L427.4,82.7 L428.8,86.3 L431.6,86.9 L435.2,89.9 L445.4,93.1 L446.4,93.1 L450.0,91.2 L452.7,93.5 L455.4,92.8 L460.7,93.5 L467.0,92.3 L468.6,91.5 L469.6,89.6 L470.6,89.4 L474.1,89.1 L477.2,90.7 L479.5,91.1 L481.9,90.3 L487.8,89.9 L493.1,88.2 L498.0,89.9 L503.8,88.4 L510.0,89.2 L522.6,88.4 L529.0,89.2 L533.0,88.9 L534.8,89.4 L535.9,90.0 L537.2,93.5 L540.1,95.5 L543.6,95.9 L544.3,95.6 L544.2,94.8 L544.6,94.8 L544.8,95.6 L549.7,96.3 L552.9,97.7 L553.8,99.5 L553.3,100.8 L553.5,101.7 L556.9,104.0 L558.2,106.2 L559.9,107.4 L563.4,107.1 L566.1,108.3 L567.3,109.3 L568.1,110.6 L568.5,110.6 L568.3,111.2 L569.2,113.8 L570.9,114.1 L573.1,116.1 L574.9,116.6 L577.4,116.4 L578.2,115.7 L582.7,115.8 L585.4,117.2 L589.9,116.2 L593.1,118.1 L596.9,118.9 L598.2,118.8 L598.1,116.9 L598.5,116.9 L598.8,120.4 L599.2,121.0 L604.4,124.8 L625.1,131.9 L626.4,132.8 L633.6,134.4 L643.6,137.7 L648.5,138.1 L648.6,144.6 Z" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="459.4" cy="185.3" r="9" fill="#9b1c1c"/><text x="445.4" y="190.3" font-size="17" font-weight="bold" text-anchor="end">Freedom substation</text>
+<rect x="532.1" y="337.6" width="10" height="10" fill="#000"/><text x="547.1" y="347.6" font-size="14">Lakewood</text>
+<rect x="257.4" y="290.1" width="10" height="10" fill="#000"/><text x="272.4" y="300.1" font-size="14">Lauderdale</text>
+<rect x="175.5" y="188.1" width="10" height="10" fill="#000"/><text x="190.5" y="198.1" font-size="14">Edgewater</text>
+<text x="12" y="24" font-size="14" fill="#555">Lake Erie</text></g></svg><figcaption>Lakewood's city line, with the Freedom substation and three other substations that serve the city. Locations from FirstEnergy's hosting-capacity map; roads and shoreline from OpenStreetMap.</figcaption></figure>
 <p>Lakewood went back to court over a new CEI substation, Freedom, built in the city. In a 4 to 3 decision, the Ohio Supreme Court held that the substation was a "public utility facility" under state law (R.C. 4905.65), which largely limited Lakewood's power to regulate it. The dissenting justices noted testimony that the substation's power would go to Lakewood customers only.<sup><a href="#s9">9</a></sup> Freedom still serves part of Lakewood today; PUCO Staff listed it among the substations feeding the city in 2025.<sup><a href="#s10">10</a></sup></p>
 
 <h2>FirstEnergy</h2>
@@ -82,7 +339,19 @@ footer{margin-top:48px;font-size:.85rem;color:#555}
 
 <h2>Another Ohio town that bought back its power</h2>
 <p class="era">Clyde, Ohio</p>
+<figure class="photo"><img src="img/clyde-buckeye-street-1909.jpg" alt="Clyde, Ohio (West Buckeye Street)" loading="lazy"><figcaption>West Buckeye Street, Clyde, Ohio, 1909. <span class="cred">Photo: Unknown, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:West_Buckeye_Street,_Clyde,_Ohio_-_DPLA_-_4cab4871ffc104a79ddf2617996e8450_(page_1).jpg">Wikimedia Commons</a>.</span></figcaption></figure>
 <p>The village of Clyde, in Sandusky County, sold its electric system to Toledo Edison in July 1965 under a 25-year franchise that was not exclusive. In 1987 Clyde re-established a municipal electric system and then built its own distribution lines. In 1996 the Ohio Supreme Court held that Clyde "had constitutional authority to build a municipal utility to serve its inhabitants," a right "not generally subject to statutory restriction," while also holding that existing Toledo Edison service was protected unless state regulators approved otherwise.<sup><a href="#s16">16</a></sup></p>
+
+<h2>In court</h2>
+<p class="era">How the major cases came out</p>
+<table class="score">
+<tr><th>Year</th><th>Case</th><th>Result</th></tr>
+<tr><td>1918</td><td>Lakewood v. CEI: enforce the free-extension promise</td><td>CEI won; the 1907 ordinance was held void<sup><a href="#s2">2</a></sup></td></tr>
+<tr><td>1979</td><td>Nuclear Regulatory Commission review of CEI and its partners</td><td>Found anticompetitive conduct; conditions on plant licenses<sup><a href="#s5">5</a></sup></td></tr>
+<tr><td>1980</td><td>CEI v. Lakewood: the Freedom substation</td><td>CEI won, 4 to 3<sup><a href="#s9">9</a></sup></td></tr>
+<tr><td>1981</td><td>Cleveland v. CEI: federal antitrust damages</td><td>Jury found for CEI; affirmed 1984<sup><a href="#s6">6</a></sup></td></tr>
+<tr><td>1996</td><td>Toledo Edison v. Clyde</td><td>Clyde's right to build its own utility upheld; existing Toledo Edison service protected<sup><a href="#s16">16</a></sup></td></tr>
+</table>
 
 <h2>Sources</h2>
 <ol class="src">
